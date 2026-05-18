@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+th {
+  color: green;
+  font-size: 30px;
+}
+
+#parrafo1 {
+  color: red;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#h1 {
+  color: blue;
+  font-size: 15px;
+}
+
+li {
+  color: rgb(22, 48, 161);
+}
+
+#item1 {
+  font-weight: bold;
+  color: black;
+}
+
+.imagenesTablas {
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 5px black;
+}
+
+#imagesTablas header {
+  background-color: rgb(120, 218, 218);
+  height: 300px;
+}
+header {
+  background-color: #65b2ea;
+  height: 300px;
+}
+
+#imgLogo {
+  width: 200px;
+}
