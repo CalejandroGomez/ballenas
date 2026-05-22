@@ -1,214 +1,236 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
     <title>Title</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <center>
-            <h1> Las Ballenas</h1>
-            <img src="imagenes/logoNobg.png" alt="" id="imgLogo">
+      <center>
+        <h1>Las Ballenas</h1>
+        <img src="imagenes/logoNobg.png" alt="" id="imgLogo" />
 
-            <nav>
-                <a href="galeria.html"> GALERIA</a>
-                <a href="sonido.html"> SONIDOS </a>
-
-            </nav>
-        </center>
+        <nav>
+          <a href="galeria.html"> GALERIA</a>
+          <a href="sonido.html"> SONIDOS </a>
+        </nav>
+      </center>
     </header>
 
     <main>
-        <section>
-            <article>
-        <p id="parrafo1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium veniam impedit alias id eaque dolorum
-            culpa atque. Et distinctio illum doloribus alias hic dolores repellendus autem magnam facere est, cum
-            incidunt doloremque culpa consequatur dolorem neque odio deleniti nostrum ab quasi totam soluta officiis?
-            Beatae magni atque quae deserunt adipisci quam odio ipsum illum corporis ex, veritatis itaque tenetur
-            temporibus, saepe eius, vel aliquam. Suscipit eligendi eveniet unde labore explicabo deleniti asperiores,
-            adipisci cumque, voluptas obcaecati corrupti, quas modi facilis! Pariatur similique, quis sequi facilis
-            optio rem suscipit, doloribus quaerat earum at perferendis rerum nam culpa laudantium quam ratione impedit?
-        </p>
+      <!-- SERVICES -->
+      <section class="services">
+        <div class="contServ">
+          <img src="imagenes/orca.webp" class="imgServ" />
+        </div>
 
-        <ol>
-            <li>
-                Orca
+        <div class="contServ">
+          <img src="imagenes/servicio1.jpg" class="imgServ" />
+        </div>
 
-            </li>
-            <li id="item1">
-                Azul
-            </li>
-            <li>
-                Jorobada
-            </li>
+        <div class="contServ">
+          <img src="imagenes/servicio2.webp" class="imgServ" />
+        </div>
+      </section>
+      <br />
+      <br /><br />
+      <hr />
 
+      <section class="tiposballenas">
+        <!-- Video -->
+        <div class="contenidoTipos">
+          <video
+            src="videos/video1.mp4"
+            width="500"
+            id="videoPpal"
+            controls
+          ></video>
+        </div>
+        <br /><br />
+        <!-- tabla -->
 
-        </ol>
-    </article>
-
-
-        </section>
-        <section>
-
-
-        </section>
-
-        <section>
-
-
-        </section>
-    </main>
-
-    <footer>
-
-
-
-    </footer>
-
-
-    
-    <section>
-        <img src="imagenes/ballena1.png" alt="Orca" width="500">
-    </section>
-
-    <section>
-        <video src="videos/video1.mp4" width="500" controls></video>
-    </section>
-
-    <hr>
-    <h2>
-        Clase de tablas
-    </h2>
-    <table border width="800" heigh="800">
-        <caption>Tipos de ballenas</caption>
-        <thead>
-            <tr>
+        <div class="contenidoTipos">
+          <table width="800" heigh="800">
+            <caption>
+              Tipos de ballenas
+            </caption>
+            <thead>
+              <tr>
                 <th>Continente</th>
                 <th>Nombre</th>
                 <th>Foto</th>
                 <th>Ubicación</th>
                 <th>Pais</th>
+              </tr>
+            </thead>
+
+            <!--FILA 1-->
+            <tr id="fila1Tabla">
+              <td rowspan="2" class="ColumnaContinente">POLOS</td>
+              <td>ORCA</td>
+              <td>
+                <img
+                  class="imagenesTablas"
+                  src="imagenes/orca.webp"
+                  width="200"
+                />
+              </td>
+              <td colspan="2">Polo Norte</td>
             </tr>
-        </thead>
+            <!--FILA 2-->
+            <tr id="fila2Tabla">
+              <td>BARBADA</td>
+              <td>
+                <img
+                  class="imagenesTablas"
+                  src="imagenes/jorobada.jpg"
+                  width="300"
+                />
+              </td>
+              <td>Polo Sur</td>
+              <td>Islas Malvinas</td>
+            </tr>
+            <!--FILA 3-->
+            <tr id="fila3Tabla">
+              <td rowspan="2" class="ColumnaContinente">EUROPA</td>
+              <td>ORCA</td>
+              <td>
+                <img
+                  class="imagenesTablas"
+                  src="imagenes/orca.webp"
+                  width="200"
+                />
+              </td>
+              <td>Mediterraneo</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </section>
 
-        <!--FILA 1-->
-        <tr>
-            <td rowspan="2">POLOS</td>
-            <td>ORCA</td>
-            <td>
-                <img    src="imagenes/orca.webp" width="200">
-            </td>
-            <td colspan="2">Polo Norte</td>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
 
+      <section class="InscripcionPpal">
+        <article class="contInscripcion">
+          <h1 id="tituloInscripcion">NUESTRA COMPAÑIA</h1>
+          <p id="parrafo1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            veniam impedit alias id eaque dolorum culpa atque. Et distinctio
+            illum doloribus alias hic dolores repellendus autem magnam facere
+            est, cum incidunt doloremque culpa consequatur dolorem neque odio
+            deleniti nostrum ab quasi totam soluta officiis? Beatae magni atque
+            quae deserunt adipisci quam odio ipsum illum corporis ex, veritatis
+            itaque tenetur temporibus, saepe eius, vel aliquam. Suscipit
+            eligendi eveniet unde labore explicabo deleniti asperiores, adipisci
+            cumque, voluptas obcaecati corrupti, quas modi facilis! Pariatur
+            similique, quis sequi facilis optio rem suscipit, doloribus quaerat
+            earum at perferendis rerum nam culpa laudantium quam ratione
+            impedit?
+          </p>
 
-        </tr>
-        <!--FILA 2-->
-        <tr>
-            <td>BARBADA</td>
-            <td>
-                <img class="imagenesTablas" src="imagenes/jorobada.jpg" width="300">
-            </td>
-            <td>Polo Sur</td>
-            <td> Islas Malvinas</td>
-        </tr>
-        <!--FILA 3-->
-        <tr>
-            <td rowspan="2">EUROPA</td>
-            <td>ORCA</td>
-            <td>
-                <img class="imagenesTablas" src="imagenes/orca.webp" width="200">
-            </td>
-            <td>Mediterraneo</td>
-            <td></td>
+          <ol>
+            <li>Orca</li>
+            <li id="item1">Azul</li>
+            <li>Jorobada</li>
+          </ol>
+        </article>
+        <!--FORMULARIO-->
+        <div class="contInscripcion">
+          <form action="" method="">
+            <fieldset>
+              <legend>Datos Personales</legend>
+              <br />
 
-        </tr>
-        <!--FILA 4-->
-        <tr>
-            <td></td>
-            <td></td>
-            <td>Atlantico</td>
-            <td></td>
-        </tr>
-    </table>
-    <br><br>
+              <label for="nombre1" id="primerItem">Nombre: </label>
+              <br />
+              <input type="text" name="" id="" />
+              <br />
+              <label for="telcel1">Teléfono</label>
+              <br />
+              <input type="number" name="" id="telcel1" />
+              <br />
 
-    <section>
-        <h2>Inscripción - Tour - Ballenas</h2>
-        <br>
+              <br />
 
-        <fieldset>
-            <legend>Datos Personales</legend>
+              <br />
+              <label for="">Combo :</label>
+              <br />
+              <select name="" id="">
+                <option value="">--SELECCIÓN--</option>
+                <option value="">Transporte</option>
+                <option value="">Transporte/Almuerzo</option>
+                <option value="">Transporte/almuerzo/Snacks</option>
+                <option value="">Transporte/almuerzo/Snacks/Cervezas</option>
+              </select>
+              <br /><br />
+              <label for="">Buceo: </label>
+              <br />
+              <label>3m</label>
+              <input type="radio" name="inmersion" />
+              <br />
+              <label>5m</label>
+              <input type="radio" name="inmersion" />
+              <br />
+              <label>7m</label>
+              <input type="radio" name="inmersion" />
 
-            <form action="" method=""> <!--POST Y GET-->
+              <br />
+              <br />
 
-                <label for="">Nombre: </label>
-                <br>
-                <input type="text" name="" id="">
-                <br>
-                <label for="telcel1">Teléfono</label>
-                <br>
-                <input type="number" name="" id="telcel1">
-                <br>
+              <label for="">CVC</label>
+              <input type="password" />
 
+              <br /><br />
+              <label for="">Implementos que lleva</label>
+              <br />
+              <input type="checkbox" name="datoImplement" id="" /> Celular
+              <input type="checkbox" name="datoImplement" id="" /> Caretas
+              <input type="checkbox" name="datoImplement" id="" /> Zapatillas
 
-                <br>
-        </fieldset>
-        <br>
-        <label for="">Combo :</label>
-        <br>
-        <select name="" id="">
-            <option value="">--SELECCIÓN--</option>
-            <option value="">Transporte</option>
-            <option value="">Transporte/Almuerzo</option>
-            <option value="">Transporte/almuerzo/Snacks</option>
-            <option value="">Transporte/almuerzo/Snacks/Cervezas</option>
+              <br /><br />
+              <label for="">Observaciones</label>
+              <br />
+              <textarea name="" id="" rows="5" cols="50"></textarea>
 
-        </select>
-        <br><br>
-        <label for="">Buceo: </label>
-        <br>
-        3m
-        <input type="radio" name="inmersion">
-        <br>
-        5m
-        <input type="radio" name="inmersion">
-        <br>
-        7m
-        <input type="radio" name="inmersion">
+              <br /><br />
+              <input type="submit" value="Guardar" />
+              <br />
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
 
-        <br>
-        <br>
+    <br />
+    <br />
+    <hr />
+    <br />
 
-        CVC
-        <input type="password">
+    <footer>
+      <div id="direcciones"></div>
+      <ul>
+        <li>
+          Dirección: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Rem, magnam.
+        </li>
+        <li>Teléfono: +x xxx xxx xxxx</li>
+        <li>Whatsapp: +x xxx xxx xxxx</li>
+        <li>Correo: Lorem@amet.com</li>
+      </ul>
 
-        <br><br>
-        <label for="">Implementos que lleva</label>
-        <br>
-        <input type="checkbox" name="datoImplement" id=""> Celular
-        <input type="checkbox" name="datoImplement" id=""> Caretas
-        <input type="checkbox" name="datoImplement" id=""> Zapatillas
-
-        <br><br>
-        <label for="">Observaciones</label>
-        <br>
-        <textarea name="" id="" rows="5" cols="80"></textarea>
-
-        <br><br>
-        <input type="submit" value="Guardar">
-         
-
-        </form>
-        <button>ENVIAR</button>
-       
-    </section>
-</body>
-
+      <div id="redesSociales"></div>
+      <img src="imagenes/facebook.png" width="130px" height="130px" alt="" />
+      <img src="imagenes/whatsapp.png" width="130px" height="130px" alt="" />
+      <img src="imagenes/linkedln.png" width="130px" height="130px" alt="" />
+    </footer>
+  </body>
 </html>
 
 <!-- Cthl ] -->
